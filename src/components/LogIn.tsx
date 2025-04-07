@@ -1,8 +1,8 @@
-import "./SignIn.scss";
+import "./LogIn.scss";
 
-const SignIn = () => {
+const LogIn = () => {
   return (
-    <div className="signIn">
+    <div className="logIn">
       <label className="mailLabel">メールアドレス</label>
       <input aria-label="mail" className="mailInput" type="email"></input>
       <label className="passwordLabel">パスワード</label>
@@ -11,9 +11,9 @@ const SignIn = () => {
         className="passwordInput"
         type="password"
       ></input>
-      <button className="signInButton">ボタン</button>
+      <button className="logInButton">ボタン</button>
     </div>
   );
 };
 
-export default SignIn;
+export default LogIn;
