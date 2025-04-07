@@ -4,9 +4,13 @@ const SignIn = () => {
   return (
     <div className="signIn">
       <label className="mailLabel">メールアドレス</label>
-      <input className="mailInput" type="email"></input>
+      <input aria-label="mail" className="mailInput" type="email"></input>
       <label className="passwordLabel">パスワード</label>
-      <input className="passwordInput" type="password"></input>
+      <input
+        aria-label="pass"
+        className="passwordInput"
+        type="password"
+      ></input>
       <button className="signInButton">ボタン</button>
     </div>
   );

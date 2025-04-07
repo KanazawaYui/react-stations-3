@@ -7,18 +7,12 @@ describe("SignIn Component", () => {
     render(<SignIn />);
 
     // メールアドレスとパスワードのラベルが表示されていることを確認
-    expect(screen.getByText(/メールアドレス/i)).toBeInTheDocument();
-    expect(screen.getByText(/パスワード/i)).toBeInTheDocument();
+    expect(screen.getByText("メールアドレス")).toBeInTheDocument();
+    expect(screen.getByText("パスワード")).toBeInTheDocument();
 
     // メールとパスワードの入力フィールドが存在することを確認
-    expect(
-      screen.getByRole("textbox", { name: /メールアドレス/i })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("textbox", { name: /パスワード/i })
-    ).toBeInTheDocument();
-
+    expect(screen.getByRole("textbox", { name: "mail" })).toBeInTheDocument();
     // ボタンが表示されていることを確認
-    expect(screen.getByRole("button", { name: /ボタン/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "ボタン" })).toBeInTheDocument();
   });
 });
