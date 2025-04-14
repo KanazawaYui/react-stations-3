@@ -1,0 +1,41 @@
+.signUp {
+  display: flex;
+  flex-direction: column;
+}
+
+.passwordLabel {
+  margin-top: 10px;
+}
+
+.signUpButton {
+  color: #fff;
+  background-color: #4a69e5;
+  margin-top: 20px;
+}
+
+.icon-setting {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: #000;
+  // position: relative;
+}
+
+.camera {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 30px;
+  background-color: #fff;
+}
+
+.fileInput {
+  display: none;
+}
