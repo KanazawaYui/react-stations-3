@@ -1,4 +1,6 @@
 import "../assets/css/LogIn.scss";
+import axios from "axios";
+import { url } from "../const";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type FormValues = {
@@ -16,8 +18,16 @@ const LogIn = () => {
     mode: "onChange",
   });
 
-  const logIn: SubmitHandler<any> = (data) => {
-    console.log(data);
+  const logIn: SubmitHandler<any> = async (data) => {
+    try {
+      // アカウント作成してトークン取得
+      await axios.post(`${url}/signin`, {
+        email: data.email,
+        password: data.password,
+      });
+    } catch (err) {
+      console.error("ログイン失敗:", err);
+    }
   };
 
   return (
