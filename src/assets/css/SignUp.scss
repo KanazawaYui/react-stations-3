@@ -3,6 +3,12 @@
   flex-direction: column;
 }
 
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .passwordLabel {
   margin-top: 10px;
 }
@@ -13,7 +19,12 @@
   margin-top: 20px;
 }
 
-.icon-setting {
+.signUpButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.iconSetting {
   position: relative;
   width: 120px;
   height: 120px;
@@ -24,7 +35,6 @@
   width: 120px;
   height: 120px;
   background-color: #000;
-  // position: relative;
 }
 
 .camera {
@@ -38,4 +48,8 @@
 
 .fileInput {
   display: none;
+}
+
+.error-message {
+  color: #f00;
 }
