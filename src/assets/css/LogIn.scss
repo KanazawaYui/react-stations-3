@@ -12,3 +12,12 @@
   background-color: #4a69e5;
   margin-top: 20px;
 }
+
+.logInButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #f00;
+}

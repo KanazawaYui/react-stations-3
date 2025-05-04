@@ -137,7 +137,6 @@ const SignUp = () => {
         {errors.password?.message && (
           <p className="error-message">{errors.password.message}</p>
         )}
-
         <label className="passwordLabel">パスワード確認</label>
         <input
           aria-label="confirm-pass"
