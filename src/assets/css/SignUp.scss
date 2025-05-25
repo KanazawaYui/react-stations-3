@@ -1,0 +1,55 @@
+.signUp {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.passwordLabel {
+  margin-top: 10px;
+}
+
+.signUpButton {
+  color: #fff;
+  background-color: #4a69e5;
+  margin-top: 20px;
+}
+
+.signUpButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.iconSetting {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: #000;
+}
+
+.camera {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 30px;
+  background-color: #fff;
+}
+
+.fileInput {
+  display: none;
+}
+
+.error-message {
+  color: #f00;
+}
