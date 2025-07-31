@@ -1,0 +1,23 @@
+.logIn {
+  display: flex;
+  flex-direction: column;
+}
+
+.passwordLabel {
+  margin-top: 10px;
+}
+
+.logInButton {
+  color: #fff;
+  background-color: #4a69e5;
+  margin-top: 20px;
+}
+
+.logInButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #f00;
+}
